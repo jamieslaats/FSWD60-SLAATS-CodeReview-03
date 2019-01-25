@@ -15,5 +15,5 @@ function calculateInsurancePerCountry(horse_power,age,countryInput) {
  	return country
 
  } 
- 	var insurance = calculateInsurancePerCountry(150,41,)
- 	document.getElementById('resultoutput').innerHTML = "Congratulations 'name of person' your insurance will be € " +insurance[2]+ " per year!";
+ 	var insurance = calculateInsurancePerCountry(100,25,)
+ 	document.getElementById('resultoutput').innerHTML = "Congratulations 'name of person' your insurance will be € " +insurance[0]+ " per year!";

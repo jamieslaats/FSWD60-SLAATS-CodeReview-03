@@ -70,18 +70,23 @@
 	color: black;
 	text-align: center;
 }
-.inputtableform {
-	
-	width:  100%;
-	float: center;
-	padding: 0px 150px 0px 150px;
+.tablesetting {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px 100px 10px 100px;
+	border:  1px solid black;
+}
+
+.forminputrows {
+	display: flex;
+	flex-direction: row;
+	justify-content:  space-around;
+	padding: 20px;
 	border:  1px solid black;
 }
 #calculatebutton {
-	width: 100%;
-	float: center;
-	padding: 40px 100px 40px 100px;
-
+	padding: 40px 75px 40px 75px;
 }
 input[type=text], select {
 	width: 100%;
@@ -110,6 +115,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+ }
+
+ #resultoutput {
+ 	text-align: center;
+ 	padding: 10px 40px 10px 40px;
+ 	font-family: arial;
+
  }
 
 /*---  END of SECTION FOR QUOTE SECTION  ---*/
