@@ -1,0 +1,48 @@
+/* Stylesheet for Website: Header, navi, footer */
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	border:  1px solid black;
+}
+
+.sectionlogobanner {
+	display:  flex;
+	flex-direction:  row;
+	justify-content:  space-around;
+	align-items:  center;
+	background:  white;
+}
+
+.sectionlogo img {
+	width: 70%;
+}
+
+.sectionbanner img {
+	width:  100%;
+	align-items: flex-end;
+}
+.sectionnavibar {
+	display:  flex;
+	flex-direction:  row;
+	background-color:  black;
+	color: white;
+	font-family:  arial;
+	font-size:  1.5em;
+}
+
+#navibar a {
+  color: white;
+  padding: 7.5px 15px 7.5px 15px;
+  text-decoration: none;
+}
+
+#navibar a:hover {
+  background-color: #dddd;
+  color: black; 
+}
+
+#todaysdate {
+	align-self:  flex-end;
+}
