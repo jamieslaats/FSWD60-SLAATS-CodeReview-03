@@ -1,9 +1,9 @@
-	var currentDate = new Date();
+	/*var currentDate = new Date();
 	var day = currentDate.getDate();
 	var month = currentDate.getMonth() + 1;
 	var year = currentDate.getFullYear();
 	var activeDate = ("Todays Date: "+ day + "." + month + "." + year);
-	document.getElementById('todaysdate').innerHTML = activeDate;
+	document.getElementById('todaysdate').innerHTML = activeDate;*/
   	
 
 function calculateInsurancePerCountry(horse_power,age,countryInput) {

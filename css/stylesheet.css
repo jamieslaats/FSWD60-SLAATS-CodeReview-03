@@ -1,12 +1,11 @@
-/* Stylesheet for Website: Header, navi, footer */
+/*--- STYLESHEET for WEBSITE---  */
 .container {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
 	margin: 0 auto;
-	border:  1px solid black;
 }
-/*---  SECTION FOR HEADER AND NAVIBAR  ---*/
+/*---  START of SECTION FOR HEADER AND NAVIBAR  ---*/
 .sectionlogobanner {
 	display:  flex;
 	flex-direction:  row;
@@ -14,11 +13,9 @@
 	align-items:  center;
 	background:  white;
 }
-
 .sectionlogo img {
 	width: 70%;
 }
-
 .sectionbanner img {
 	width:  100%;
 	align-items: flex-end;
@@ -31,23 +28,18 @@
 	font-family:  arial;
 	font-size:  1.5em;
 }
-
 #navibar a {
   color: white;
   padding: 7.5px 15px 7.5px 15px;
   text-decoration: none;
 }
-
 #navibar a:hover {
   background-color: #dddd;
   color: black; 
 }
 
-#todaysdate {
-	align-self:  flex-end;
-}
-/*---  SECTION ENDS FOR HEADER AND NAVIBAR  ---*/
-/*---  SECTION BEGINS FOR QUOTE SECTION AND ALL IN IT  ---*/
+/*---  END of SECTION FOR HEADER AND NAVIBAR  ---*/
+/*---  START of SECTION FOR QUOTE SECTION  ---*/
 
 .sectionquotecomplete {
 	background-image: url(../img/citymovingspeed.jpg);
@@ -63,6 +55,7 @@
 	padding: 20px 0px 100px 0px;
 	bottom:  -80px;
 	border: 2px solid grey;
+	box-shadow: 2px 2px 2px 0px;
 }
 #s1 {
 	font-family: arial;
@@ -78,6 +71,7 @@
 	text-align: center;
 }
 .inputtableform {
+	
 	width:  100%;
 	float: center;
 	padding: 0px 150px 0px 150px;
@@ -87,7 +81,6 @@
 	width: 100%;
 	float: center;
 	padding: 40px 100px 40px 100px;
-	border:  1px solid black;
 
 }
 input[type=text], select {
@@ -119,10 +112,8 @@ input[type=submit]:hover {
   background-color: #45a049;
  }
 
-
-
-/*---  SECTION ENDS FOR QUOTE SECTION AND ALL IN IT  ---*/
-/*---  SECTION BEGINS FOR GENERAL PARAGRAPH  ---*/
+/*---  END of SECTION FOR QUOTE SECTION  ---*/
+/*---  START of SECTION FOR GENERAL PARAGRAPH  ---*/
 
 .sectioninfotext {
 	background-color: #CECECE;
@@ -136,8 +127,8 @@ input[type=submit]:hover {
 	font-size: 2em;
 }
 
-/*---  SECTION ENDS FOR GENERAL PARAGRAPH  ---*/
-/*---  SECTION BEGINS FOR COLUMN OFFERINGS ---*/
+/*---  END of SECTION FOR GENERAL PARAGRAPH  ---*/
+/*---  START of SECTION FOR COLUMN OFFERINGS ---*/
 
 .sectionoffering {
 	display:  flex;
@@ -151,14 +142,14 @@ input[type=submit]:hover {
 	height: 300px;
 	margin:  10px;
 	padding: 10px;
-	border:  1px solid black;
+	box-shadow: 0px 4px 5px 1px #999999;
+	border-top: 2px solid black;
 }
 #s4 {
 	font-size: 1.5em;
 	font-weight: bold;
 	color: darkblue;
 }
-
 #s5 {
 	font-size: 1.1em;
 	font-weight: bold;
@@ -168,7 +159,6 @@ input[type=submit]:hover {
 	padding-top: 20px;
 	color: grey;
 }
-
 li:before {
 	content: '✔';
 	color: #90D3D5;   
@@ -178,17 +168,15 @@ li:before {
 li {
 	margin: 10px 0px 10px 0px;
 }
-
 ul {
    padding-left: 20px;
    text-indent: 2px;
    list-style: none;
    list-style-position: outside;
-
 }
 
-/*---  SECTION ENDS FOR COLUMN OFFERINGS ---*/
-/*---  SECTION BEGINS FOR FOOTER ---*/
+/*---  END of SECTION FOR COLUMN OFFERINGS ---*/
+/*---  START of SECTION FOR FOOTER ---*/
 .footer {
 	background-color: black;
 }
@@ -202,21 +190,21 @@ ul {
 #navibarbottom a {
   color: white;
   padding: 7.5px 15px 7.5px 15px;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 #navibarbottom a:hover {
   background-color: #dddd;
-  color: black; }
-
+  color: black;
+}
 .footerlogo img {
   width: 25%;
   display: block;
   margin-left: auto;
-  margin-right: 20px; }
-
+  margin-right: 20px;
+}
 .copyright {
   text-align: center;
   font-family: arial;
   color: white; }
-
-/*---  SECTION ENDS FOR FOOTER ---*/
+/*---  END of SECTION FOR FOOTER ---*/
+/*--- END of ENTIRE WEBSITE CONTAINER/*
