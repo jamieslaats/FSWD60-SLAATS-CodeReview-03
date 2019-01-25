@@ -50,21 +50,23 @@
 /*---  SECTION BEGINS FOR QUOTE SECTION AND ALL IN IT  ---*/
 
 .sectionquotecomplete {
-	background-image: url(../img/cityspeed.jpg);
+	background-image: url(../img/citymovingspeed.jpg);
 	padding-top: 1px;
 	padding-bottom:  1px;
 }
 
 .sectionquoteinner {
+	position: relative;
 	margin: 0 auto;
-	width: 90%;
-	background-color: rgb(255,255,255,0.6);
-	padding-bottom: 100px;
-	border-color: black;
+	width: 80%;
+	background-color: rgb(255,255,255,0.7);
+	padding: 20px 0px 100px 0px;
+	bottom:  -80px;
+	border: 2px solid grey;
 }
-#quoteheader {
+#s1 {
 	font-family: arial;
-	font-size: 3.5em;
+	font-size: 2em;
 	color: white;
 	padding-left: 40px;
 }
@@ -75,6 +77,47 @@
 	color: black;
 	text-align: center;
 }
+.inputtableform {
+	width:  100%;
+	float: center;
+	padding: 0px 150px 0px 150px;
+	border:  1px solid black;
+}
+#calculatebutton {
+	width: 100%;
+	float: center;
+	padding: 40px 100px 40px 100px;
+	border:  1px solid black;
+
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+label {
+	font-family: arial;
+	font-size: 1.2em;
+}
+input[type=submit] {
+	width: 100%;
+  	background-color: #4CAF50;
+  	color: white;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	cursor: pointer;
+  	font-size: 2em;
+  	font-family: arial;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+ }
 
 
 
@@ -86,9 +129,11 @@
 	text-align:  center;
 	border:  1px soid black;
 	font-family: arial;
-	font-size: 1.5em;
-	padding-top: 40px;
-
+	font-size: 2em;
+	padding: 80px 0px 10px 0px;
+}
+#s2 {
+	font-size: 2em;
 }
 
 /*---  SECTION ENDS FOR GENERAL PARAGRAPH  ---*/
@@ -100,22 +145,47 @@
 	justify-content:  space-around;
 
 }
-#firstcolumnoffering {
+#firstcolumnoffering, #secondcolumnoffering  {
+	font-family:  arial;
 	width: 350px;
 	height: 300px;
 	margin:  10px;
 	padding: 10px;
 	border:  1px solid black;
 }
-
-#secondcolumnoffering {
-	width: 350px;
-	height: 300px;
-	margin:  10px;
-	padding: 10px;
-	border:  1px solid black;
+#s4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: darkblue;
 }
 
+#s5 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: black;
+}
+#para1 {
+	padding-top: 20px;
+	color: grey;
+}
+
+li:before {
+	content: '✔';
+	color: #90D3D5;   
+    margin-left: 1em;
+    margin-right: 1.2em;
+}
+li {
+	margin: 10px 0px 10px 0px;
+}
+
+ul {
+   padding-left: 20px;
+   text-indent: 2px;
+   list-style: none;
+   list-style-position: outside;
+
+}
 
 /*---  SECTION ENDS FOR COLUMN OFFERINGS ---*/
 /*---  SECTION BEGINS FOR FOOTER ---*/

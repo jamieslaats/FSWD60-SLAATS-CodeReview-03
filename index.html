@@ -33,7 +33,7 @@
 					<!--START OF THE QUOTATION SECTION -->
 					<div class="sectionquotecomplete">
 							<div class="sectiontitle">
-								<h1 id="quoteheader">Auto Insurance</h1>	
+								<h1 id="quoteheader"><span id="s1">Auto Insurance</span></h1>	
 							</div>
 						<div class="sectionquoteinner">
 								<div id="quotetext">
@@ -41,53 +41,70 @@
 								</div>
 								<div id="sectionform">
 									<form id="form">
-										Your Name: </br>
-										<input type="text" name="name"></br>
-										Age: </br>
-										<input type="text" name="age"></br>
-										Country: </br>
-										<input type="text" name="country"></br>
-										Power of Your Car (bhp): </br>
-										<input type="text" name="bhp"></br>
+										<table class="inputtableform">
+										<tr>
+											<td>
+												<label for="calc">Your Name:</label> </br>
+												<input type="text" name="firstlastname" placeholder="Your Name"></br>
+											</td>
+											<td>
+												<label for="calc">Age:</label></br>
+												<input type="text" name="age" placeholder="Age"></br>
+											</td>
+										</tr>
+											<td>
+												<label for="calc">Country:</label> </br>
+												<select name="country">
+													<option type="text" value=""></option>
+													<option type="text" value="Austria">Austria</option>
+													<option type="text" value="Hungary">Hungary</option>
+													<option type="text" value="Greece">Greece</option>
+												</select></br>
+											</td>
+											<td>
+												<label for="calc">Power of Your Car (bhp):</label> </br>
+												<input type="text" name="bhp" placeholder="Power in BHP"></br>
+											</td>
+										<tr>
+											<td id="calculatebutton" colspan="2" rowspan="2"><input id="calcBtn" type="submit" value="CALCULATE"></td>
+										</tr>
+										</table>
 									</form>
 								</div>	
-								<div id="calculatebtn">
-									<button type="push2calculate">CALCULATE</button>			
-								</div>			
 								<div id="calculationresult">
-									<h1>brings in the calculation results</h1>
+									<h1 id="resultoutput">brings in the calculation results</h1>
 								</div>
 						</div>
 					</div>
 					<div class="sectioninfotext">
-						<p id="s1">Disrupting Auto Insurance Coverage</p>
-						<p>Understanding your auto coverage options should not be so hard.</p>
-						<p>We will guide you through all available coverage types, starting with who and what is covered!</p>
+						<p><span id="s2">Un-Complicating Car Coverage</span></br>
+						Understanding your auto coverage options should not be so hard.</br>
+						We will guide you through all available coverage types,</br> starting with who and what is covered!</p>
 					</div>
 					<!--START OF FIRST COLUMN OFFERING-->
 					<div class="sectionoffering">
 						<div id=firstcolumnoffering>
-							<h2>What Comes Standard</h2>
-							<p>The coverage you need:</p>
+							<p><span id="s4">What Comes Standard</span></br>
+							The coverage you need:</p>
 							<ul>
 								<li>Bodily Injury Liability</li>
 								<li>Property Damage</li>
 								<li>Medical Payments</li>
 							</ul>
-							<h3>Benefits</h3>
-							<p>12-month rate guarantee | 24/7 customer service | Lifetime repair gaurantee</p>	
+							<p id="para1"><span id="s5">Benefits</span></br>
+							12-month rate guarantee | 24/7 customer service | Lifetime repair gaurantee</p>	
 						</div>
 						<!--START OF SECOND COLUMN OFFERING -->
 						<div id=secondcolumnoffering>
-							<h2>Add-on Protection & Coverage</h2>
-							<p>For more peace of mind:</p>
+							<p><span id="s4">Add-on Protection & Coverage</span></br>
+							For more peace of mind:</p>
 							<ul>
 								<li>Better Car Replacement</li>
 								<li>Towing and Labour</li>
 								<li>Rental Car Coverage</li>
 							</ul>
-							<h3>Earned Benefits</h3>
-							<p>Accident Forgiveness<span id="s2">1</span> | New car replacements<span id="s3"></span></p>
+							<p id="para1"><span id="s5">Earned Benefits</span></br>
+							Accident Forgiveness<span id="s3">1</span> | New car replacements<span id="s3"></span></p>
 						</div>
 					</div><!-- End Of Section Offering -->
 				</div><!--End of Div for Main Section -->
