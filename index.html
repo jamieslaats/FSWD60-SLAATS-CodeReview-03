@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Insurance CF - The Disruptor in Auto Insurance!</title>
+	<title>Insurance CF - The Auto Insurance!</title>
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
@@ -39,16 +39,15 @@
 									<h1 id=quoteheadertext> Great coverage begins with a custom quote!</h1>
 								</div>
 								<div id="sectionform">
-									<form id="form">
+									<form action="" method="" id="insuranceform">
 										<div class="tablesetting">
-										<table class="inputtableform">
 											<div class="forminputrows">
 												<div id="column1">
 													<label for="calc">Your Name:</label> </br>
-													<input type="text" name="firstlastname" placeholder="Your Name"></br></br>
+													<input type="text" name="firstlastname" id="firstlastname" placeholder="Your Name"></br></br>
 													<label for="calc">Country:</label> </br>
-													<select name="country">
-														<option type="text" value=""></option>
+													<select name="country" id="country">
+														<option type="text" value="Country"></option>
 														<option type="text" value="Austria">Austria</option>
 														<option type="text" value="Hungary">Hungary</option>
 														<option type="text" value="Greece">Greece</option>
@@ -56,20 +55,17 @@
 												</div>
 												<div class="column2">
 													<label for="calc">Age:</label></br>
-													<input type="text" name="age" placeholder="Age"></br></br>
+													<input type="text" name="age" id="age" placeholder="Age"></br></br>
 													<label for="calc">Power of Your Car (bhp):</label> </br>
-													<input type="text" name="bhp" placeholder="Power in BHP"></br>
+													<input type="text" name="bhp" id="bhp" placeholder="Power in BHP"></br>
 												</div>
 											</div>
 											<div id="calculatebutton"><input id="calcBtn" type="submit" value="CALCULATE">
 											</div>
-										</table>
-									</div>
+										</div>
+									<div id="resultoutput">Your Rate Is!</div>
 									</form>
 								</div>	
-								<div id="calculationresult">
-									<h1 id="resultoutput">brings in the calculation results</h1>
-								</div>
 						</div>
 					</div>
 					<div class="sectioninfotext">
