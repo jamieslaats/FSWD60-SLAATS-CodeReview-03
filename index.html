@@ -39,31 +39,31 @@
 									<h1 id=quoteheadertext> Great coverage begins with a custom quote!</h1>
 								</div>
 								<div id="sectionform">
-									<form action="" method="" id="insuranceform">
+									<form class="insureform" name="myForm" action="" method="get" onsubmit="" id="insuranceform">
 										<div class="tablesetting">
 											<div class="forminputrows">
 												<div id="column1">
-													<label for="calc">Your Name:</label> </br>
+													<label for="name">Your Name:</label> </br>
 													<input type="text" name="firstlastname" id="firstlastname" placeholder="Your Name"></br></br>
-													<label for="calc">Country:</label> </br>
-													<select name="country" id="country">
-														<option type="text" value="Country"></option>
-														<option type="text" value="Austria">Austria</option>
-														<option type="text" value="Hungary">Hungary</option>
-														<option type="text" value="Greece">Greece</option>
+													<label for="country">Country:</label> </br>
+													<select name="country" id="country" onChange="country">
+														<option  id="none" type="text" value="None">Select Country</option>
+														<option id="austria" type="text" value="Austria">Austria</option>
+														<option id="hungary" type="text" value="Hungary">Hungary</option>
+														<option id="greece" type="text" value="Greece">Greece</option>
 													</select></br>
 												</div>
 												<div class="column2">
-													<label for="calc">Age:</label></br>
+													<label for="age">Age:</label></br>
 													<input type="text" name="age" id="age" placeholder="Age"></br></br>
-													<label for="calc">Power of Your Car (bhp):</label> </br>
+													<label for="bhp">Power of Your Car (bhp):</label> </br>
 													<input type="text" name="bhp" id="bhp" placeholder="Power in BHP"></br>
 												</div>
 											</div>
-											<div id="calculatebutton"><input id="calcBtn" type="submit" onclick="getForm()" value="CALCULATE">
+											<div id="calculatebutton"><input id="calcBtn" type="button" name="calculate" onClick="processFormData()" value="CALCULATE">
 											</div>
 										</div>
-									<div id="resultoutput">Your Rate Is!</div>
+									<div id="resultoutput"></div>
 									</form>
 								</div>	
 						</div>
