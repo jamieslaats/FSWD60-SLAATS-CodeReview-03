@@ -5,57 +5,66 @@
 	var year = currentDate.getFullYear();
 	var activeDate = ("Todays Date: "+ day + "." + month + "." + year);
 	document.getElementById('todaysdate').innerHTML = activeDate;*/
-  	
-function processFormData() {
-	
-	var formFirstLastName = document.getElementById("firstlastname");
-	var name = formFirstLastName.value;
-	var formAge = document.getElementById("age");
-	var age = formAge.value;
-	var formBhp = document.getElementById("bhp");
-	var horsePower = formBhp.value;
-	
-	var selected_index = myForm.elements["country"].selectedIndex;
+ 
+function calculateMyInsurance(formFirstLastName,formAge,formBhp,formCountry) {
 
-	console.log(selected_index);
-	
-	if(selected_index = [1]) {
-			var insurance = Math.round(Number(horsePower)*100/Number(age)+50);
+	var formFirstLastName = document.getElementById("firstlastname").value;
+	console.log(formFirstLastName);
+	var formAge = Number(document.getElementById("age").value);
+	console.log(formAge);
+	var formBhp = Number(document.getElementById("bhp").value);
+	console.log(formBhp);
+	var formCountry = document.getElementById("country").value;
+	console.log(formCountry);
 
+		if (formCountry == "Austria") {
+			document.getElementById("resultoutput").innerHTML = formFirstLastName + " your yearly insurance will be €" + Math.floor(formBhp*100/formAge+50) + "!"
+		
+		} else if (formCountry == "Hungary") {
+			document.getElementById("resultoutput").innerHTML = formFirstLastName + " your yearly insurance will be €" + Math.floor(formBhp*120/formAge+100) + "!"
+		
+		} else {
+			document.getElementById("resultoutput").innerHTML = formFirstLastName + " your yearly insurance will be €" + Math.floor(formBhp*150/(formAge+3)+50) + "!"
+		}
 	}
-	else if (selected_index = [2]) {
-			var insurance = Math.round(Number(horsePower)*120/Number(age)+100);
-	}
-	else if (selected_index = [3]) {
-			var insurance = Math.round(Number(horsePower)*150/(Number(age)+3)+50);
-	}
-	
-	document.getElementById("resultoutput").innerHTML = "<h2> Hi " + name + " your auto insurance per year is €" + insurance + ".</h2>";
-	console.log("Hi " + name + "your auto insurance is per year €" + insurance + "!");
-}
 
-/*function calculateInsurancePerCountry(horse_power,age,country) {
- 	var austria = Math.round(horse_power*100/age+50);
- 	var hungary = Math.round(horse_power*120/age+100);
- 	var greece = Math.round(horse_power*150/(age+3)+50);
+	document.getElementById("calcBtn").addEventListener("click", calculateMyInsurance, false);
+
+
+
+
+/* TRY OF CALCULATE INSURANCE BY COUNTRY AND WOULDN"T WORK with the BELOW??? */
+/*	function calculateInsurancePerCountry(horse_power,age) {
+ 	
+	var formFirstLastName = document.getElementById("firstlastname").value;
+	console.log(formFirstLastName);
+	var formAge = Number(document.getElementById("age").value);
+	console.log(formAge);
+	var formBhp = Number(document.getElementById("bhp").value);
+	console.log(formBhp);
+	var formCountry = document.getElementById("country").value;
+	console.log(formCountry);
+
+
+	var austria = Math.round(formBhp*100/formAge+50);
+ 	var hungary = Math.round(formBhp*120/formAge+100);
+ 	var greece = Math.round(formBhp*150/(formAge+3)+50);
  	var country = [austria, hungary, greece];
  	return country
+ 	console.log(country);
 
- 	var insurance = calculateInsurancePerCountry(horsePower,age);
+	var insurance = calculateInsurancePerCountry(formBhp,formAge);
 	console.log(insurance);
- } */
+
+ 	if (formCountry == "Austria") {
+		document.getElementById("resultoutput").innerHTML = "Dear " + formFirstLastName + " your yearly insurance will be € " + country[0] + " !"; 
 	
-
-
-	/*var allFormData = processFormData();
-	console.log(allFormData);
+	}else if (formCountry = "Hungary") {
+		document.getElementById("resultoutput").innerHTML = "Dear " + formFirstLastName + " your yearly insurance will be € " + country[1] + " !"; 
 	
- 
- 	var m = document.getElementById("calcBtn");
-	m.addEventListener('submit',processFormData(), false);
-
- 	document.getElementById("resultoutput").innerHTML = "Congratulations your insurance will be: <br> €" + insurance[0] + " per year!";
-*/
-
-
-
+	}else {
+		document.getElementById("resultoutput").innerHTML = "Dear " + formFirstLastName + " your yearly insurance will be € " + country[2] + " !"; 
+	}
+}
+		document.getElementById("calcBtn").addEventListener("click", calculateInsurancePerCountry, false);*/
+	
